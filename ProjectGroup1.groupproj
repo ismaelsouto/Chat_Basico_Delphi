@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A4319E81-A8DD-4BFF-9991-B1F872172AF7}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Chat_Server.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Chat_Client.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Chat_Server">
+        <MSBuild Projects="Chat_Server.dproj"/>
+    </Target>
+    <Target Name="Chat_Server:Clean">
+        <MSBuild Projects="Chat_Server.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Chat_Server:Make">
+        <MSBuild Projects="Chat_Server.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Chat_Client">
+        <MSBuild Projects="Chat_Client.dproj"/>
+    </Target>
+    <Target Name="Chat_Client:Clean">
+        <MSBuild Projects="Chat_Client.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Chat_Client:Make">
+        <MSBuild Projects="Chat_Client.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Chat_Server;Chat_Client"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Chat_Server:Clean;Chat_Client:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Chat_Server:Make;Chat_Client:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

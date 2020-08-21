@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/08/12 08:13:41.000.517,=C:\Users\Ismael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/08/12 08:14:02.000.481,C:\Users\Ismael\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Ismael\Programas_Delphi\Chat_Basico_v2\Server.dfm</Transaction>
+    <Transaction>2020/08/12 08:14:02.000.481,C:\Users\Ismael\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Ismael\Programas_Delphi\Chat_Basico_v2\Server.pas</Transaction>
+    <Transaction>2020/08/12 08:14:17.000.940,C:\Users\Ismael\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Ismael\Programas_Delphi\Chat_Basico_v2\Chat_Server.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

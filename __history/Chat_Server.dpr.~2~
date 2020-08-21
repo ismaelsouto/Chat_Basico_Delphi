@@ -1,0 +1,14 @@
+program Chat_Server;
+
+uses
+  Vcl.Forms,
+  Server in 'Server.pas' {Servidor};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TServidor, Servidor);
+  Application.Run;
+end.
